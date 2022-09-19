@@ -1,0 +1,208 @@
+.login {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://winbuzzer.com/wp-content/uploads/2019/01/netflix-reuse-official.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav_login h1 {
+  margin-left: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  color: rgb(211, 18, 18);
+  font-family: "Cinzel", serif;
+  z-index: 1;
+  position: fixed;
+  top: 10px;
+  font-size: 35px;
+}
+.signin {
+  width: 25rem;
+  height: 30rem;
+  margin: auto;
+  margin-top: 0rem;
+  background-color: rgba(10, 10, 10, 0.863);
+}
+.signin h1 {
+  color: white;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.input {
+  width: 20rem;
+  margin-bottom: 1.5rem;
+  height: 2rem;
+  border-radius: 5px;
+  outline: none !important;
+  border: none;
+  font-size: 20px;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  padding: 10px;
+}
+
+.button_in {
+  width: 21.5rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.button_test {
+  width: 21.5rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 1rem;
+}
+
+.signin p {
+  color: white;
+}
+.sign_up_text {
+  display: flex;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav_login h1 {
+    margin-left: 0rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    color: rgb(211, 18, 18);
+    font-family: "Cinzel", serif;
+    z-index: 0;
+    position: relative;
+    top: 0px;
+    font-size: 35px;
+  }
+  #login .nav_login h1 {
+    margin-left: 0.7rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    color: rgb(211, 18, 18);
+    font-family: "Cinzel", serif;
+    z-index: 1;
+    position: relative;
+    top: -73px;
+    font-size: 35px;
+  }
+
+  .login {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://winbuzzer.com/wp-content/uploads/2019/01/netflix-reuse-official.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .signin {
+    width: 95vw;
+    height: 25rem;
+    margin: auto;
+    margin-top: 0rem;
+    background-color: rgba(10, 10, 10, 0.863);
+    border-radius: 10px;
+  }
+  .signin h1 {
+    color: white;
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    margin-top: 1rem;
+    align-items: center;
+    /* border: 1px solid white; */
+  }
+
+  .input {
+    width: 19rem;
+    margin-bottom: 1.5rem;
+    height: 2rem;
+    border-radius: 5px;
+    outline: none !important;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    padding: 10px;
+  }
+
+  #login .banner_top {
+    height: 5rem;
+    background-image: linear-gradient(
+      360deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+  }
+  .button_in {
+    width: 19rem;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .button_test {
+    width: 19rem;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 1rem;
+  }
+
+  .signin p {
+    color: white;
+  }
+  .sign_up_text {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,160 @@
+.MyList {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.MyList h4 {
+  color: white;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.movie_row {
+  display: flex;
+  /* border: 1px solid white; */
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  width: 97%;
+  margin-left: 1rem;
+}
+
+.movie_card {
+  /* border: 1px solid white; */
+  width: 17rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  height: 15rem;
+}
+
+.movie_posters {
+  object-fit: contain;
+  max-height: 180px;
+  transition: transtorm 450ms;
+  margin-right: 10px;
+  cursor: pointer;
+  max-width: 17rem;
+}
+
+.movie_card h3 {
+  color: white;
+  margin-left: 0.3rem;
+  padding-top: 0.2rem;
+  margin-top: -0.2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: break-word;
+  max-height: 4.2rem;
+}
+
+.movie_del {
+  /* border: 1px solid white; */
+  height: 5rem;
+  background-color: rgb(34, 34, 34);
+}
+
+.movie_del h3 {
+  cursor: pointer;
+}
+
+.fa-check {
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+#list .fa-play-circle {
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .MyList {
+    width: 100vw;
+    min-height: 100vh;
+  }
+
+  .MyList h4 {
+    color: white;
+    padding-top: 4rem;
+    padding-left: 0.5rem;
+    font-size: 25px;
+    font-weight: 500;
+    /* border: 1px solid; */
+  }
+
+  .movie_row {
+    display: flex;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-left: 0rem;
+    justify-content: space-evenly;
+    /* border: 1px solid white; */
+  }
+
+  .movie_card {
+    /* border: 1px solid white; */
+    width: 10rem;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+    height: 10.5rem;
+    margin-right: 0rem;
+  }
+
+  .movie_posters {
+    object-fit: contain;
+    max-height: 150px;
+    transition: transtorm 450ms;
+    margin-right: 0px;
+    cursor: pointer;
+    max-width: 10rem;
+    /* border: 1px solid white; */
+  }
+
+  .movie_card h3 {
+    color: white;
+    margin-left: 0.3rem;
+    padding-top: 0.5rem;
+    margin-top: -0.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-height: 4.2rem;
+    font-size: 19px;
+    /* border: 1px solid white; */
+  }
+
+  .movie_del {
+    /* border: 1px solid white; */
+    height: 4.6rem;
+    background-color: rgb(34, 34, 34);
+  }
+
+  .movie_del h3 {
+    cursor: pointer;
+  }
+
+  .fa-check {
+    color: white;
+    font-size: 29px;
+    cursor: pointer;
+  }
+  #list .fa-play-circle {
+    font-size: 35px;
+  }
+}

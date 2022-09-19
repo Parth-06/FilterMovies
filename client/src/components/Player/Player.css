@@ -1,0 +1,243 @@
+.player {
+  color: rgb(212, 207, 207);
+  display: flex;
+  scroll-behavior: smooth;
+  flex-direction: column;
+  height: 100%;
+}
+.fa-arrow-left {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.videoPlayer {
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  z-index: 1;
+  position: absolute;
+  top: 1rem;
+  margin-left: 1rem;
+}
+
+.movieinfo {
+  width: 50rem;
+  /* border: 1px solid; */
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.movieinfo p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.more {
+  /* border: 1px solid; */
+  width: 50rem;
+  height: 70rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.more h1 {
+  font-size: 30px;
+  margin-bottom: 1.5rem;
+}
+
+.more_card {
+  width: 50rem;
+  height: 46rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 5px;
+  background-color: rgb(44, 43, 43);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.thumbnail {
+  height: 9rem;
+  width: 15rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.allinfo {
+  width: 13.5rem;
+  text-align: center;
+}
+
+.allinfo p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: break-word;
+  max-height: 7rem;
+}
+
+.allinfo h2 {
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: break-word;
+  max-height: 2rem;
+}
+
+.play {
+  z-index: 1;
+  position: absolute;
+  display: none;
+}
+
+.fa-play-circle {
+  font-size: 45px;
+  color: white;
+}
+
+#player .fa-play-circle {
+  font-size: 40px;
+  margin-right: 2rem;
+}
+#player .fa-check {
+  font-size: 35px;
+}
+
+#player .fa-plus-circle {
+  font-size: 38px;
+}
+@media only screen and (max-width: 800px) {
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .videoPlayer {
+    width: 100vw;
+    height: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .back {
+    z-index: 1;
+    position: absolute;
+    top: 1rem;
+    margin-left: 1.2rem;
+  }
+
+  .movieinfo {
+    width: 94vw;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .movieinfo p {
+    margin-top: 0.5rem;
+  }
+  .more {
+    /* border: 1px solid; */
+    width: 100vw;
+    height: 100%;
+    margin-top: 2rem;
+    margin-left: 0rem;
+  }
+
+  .more h1 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .more_card {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .cards {
+    width: 11rem;
+    height: 16rem;
+    border-radius: 5px;
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .thumbnail {
+    height: 8rem;
+    width: 11rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .allinfo {
+    width: 9rem;
+    text-align: center;
+  }
+
+  .allinfo p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-height: 5rem;
+    font-size: 15px;
+  }
+
+  .allinfo h2 {
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-height: 5rem;
+  }
+
+  .play {
+    z-index: 1;
+    position: absolute;
+    display: none;
+  }
+
+  .fa-play-circle {
+    font-size: 45px;
+    color: white;
+  }
+}
