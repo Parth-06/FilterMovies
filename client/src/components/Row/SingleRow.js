@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import VideosData from "../VideosData";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 import "./Row.css";
@@ -7,13 +6,11 @@ import { useNavigate } from "react-router-dom";
 import { UpdateData } from "../../Context/Context";
 const base_url = "https://image.tmdb.org/t/p/original/";
 const url =
-  "https://res.cloudinary.com/filtersocial/video/upload/v1661111597/video/SnapSave.io-Disney_s_Jungle_Cruise_Official_Trailer-_1080p_vd9m1f.mp4";
+  "https://ik.imagekit.io/ma2ncam6qv/Untitled_R7srzMTPv.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1663707609125";
 const SingleRow = ({ movie }) => {
   const [isHovered, setisHovered] = useState(false);
   const navigate = useNavigate();
   const { moviedata } = UpdateData();
-  console.log(moviedata);
-  // var randomItem = VideosData[Math.floor(Math.random() * VideosData.length)];
 
   const addList = async (id) => {
     const res = await fetch("/add_id", {
